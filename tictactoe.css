@@ -103,16 +103,20 @@ body {
         flex-wrap: wrap;
     }
 
-    .gameInfo {
+    .info {
         margin-top: 34px;
     }
 
-    .gameInfo h1 {
+    .info h1 {
         font-size: 1.5rem;
     }
 
     .game {
         grid-template-rows: repeat(3, 20vw);
         grid-template-columns: repeat(3, 20vw);
+    }
+    #gif{
+        display: none;
+        width: 100vw;
     }
 }
