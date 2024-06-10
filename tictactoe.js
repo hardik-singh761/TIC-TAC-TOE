@@ -24,8 +24,9 @@ function checkWin() {
         if (boardState[2] === boardState[4] && boardState[4] === boardState[6]) {
             return true;
         }
-        return false;
+        
     }
+    return false;
 }
 function changeTurn(turn) {
     if (turn === 'X') {
