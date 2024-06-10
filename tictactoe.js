@@ -4,8 +4,8 @@ for (let box of boxes) {
 }
 let turn = 'X';
 let boardState = ['', '', '', '', '', '', '', '', ''];
-let music = new Audio("tictactoe/ting.mp3");
-let gameover = new Audio('tictactoe/gameover.mp3');
+let music = new Audio("ting.mp3");
+let gameover = new Audio('gameover.mp3');
 let count = 0;
 function checkWin() {
     count++;
