@@ -18,13 +18,6 @@ function checkWin() {
         if (boardState[a] === boardState[b] && boardState[b] === boardState[c]) {
             return true;
         }
-        if (boardState[0] === boardState[4] && boardState[4] === boardState[8]) {
-            return true;
-        }
-        if (boardState[2] === boardState[4] && boardState[4] === boardState[6]) {
-            return true;
-        }
-        
     }
     return false;
 }
