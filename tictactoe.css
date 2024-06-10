@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: lightseagreen
+}
+
+.nav {
+    display: flex;
+    background-color: rgb(107, 17, 116);
+    margin: 0;
+    justify-content: flex-start;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: 900;
+    color: wheat;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    flex-shrink: 2;
+}
+
+.game {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position: relative;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(238, 205, 238);
+}
+
+.info {
+    font-size: 2rem;
+}
+
+.line {
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+#reset {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding: 2px 10px;
+    border-radius: 10%;
+    background-color: rgb(107, 17, 116);
+    color: wheat;
+}
+
+#reset:hover {
+    box-shadow: 1px 1px 1px 1px black;
+    background-color: red;
+    transition: all .3s ease;
+}
+
+.b-b {
+    border-bottom: none;
+}
+
+.b-t {
+    border-top: none;
+}
+
+.b-r {
+    border-right: none;
+}
+
+.b-l {
+    border-left: none;
+}
+
+#gif {
+    margin-top: 3rem;
+    width: 20vw;
+    height: 40vh;
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 34px;
+    }
+
+    .gameInfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .game {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}

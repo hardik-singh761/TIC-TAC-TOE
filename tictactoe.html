@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+
+<body>
+    <div class="nav">
+        TicTacToe.com
+    </div>
+    <div class="container">
+        <div class="game">
+            <div class="line"></div>
+            <div class="box col b-t b-l" data-index="0">x</div>
+            <div class="box col b-t" data-index="1">x</div>
+            <div class="box col b-t b-r" data-index="2">x</div>
+            <div class="box col b-l" data-index="3">x</div>
+            <div class="box col" data-index="4">x</div>
+            <div class="box col b-r" data-index="5">x</div>
+            <div class="box col b-b b-l" data-index="6">x</div>
+            <div class="box col b-b" data-index="7">x</div>
+            <div class="box col b-b b-r" data-index="8">x</div>
+        </div>
+        <div class="info">
+            <span class="text">X's Turn</span>
+            <button id="reset">reset</button>
+            <div>
+                <img id="gif" src="tictactoe/excited.gif">
+            </div>
+        </div>
+        <script src="tictactoe.js"></script>
+</body>
+
+</html>
